@@ -1,4 +1,4 @@
-## Modern Linux Servers with cgroups"
+## Modern Linux Servers with cgroups
 
 Keynote slides and resources from my LinuxCon 2013 talk.
 
