@@ -1,0 +1,7 @@
+[Unit]
+Description=Eat CPU
+
+[Service]
+Restart=always
+CPUShares=100
+ExecStart=/bin/bash -c 'while true; do echo foo; done > /dev/null'

@@ -1,0 +1,10 @@
+[Unit]
+Description=Eat DISK
+
+[Service]
+Restart=always
+BlockIOWeight=1000
+StartLimitInterval=0
+StartLimitBurst=0
+ExecStartPre=/bin/bash -c 'echo 3 > /proc/sys/vm/drop_caches'
+ExecStart=/bin/dd if=/home/core/zerofile2 of=/dev/null
